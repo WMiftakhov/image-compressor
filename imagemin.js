@@ -19,17 +19,3 @@ const optimisePNGImages = () =>
 optimiseJPEGImages()
     .then(() => optimisePNGImages())
     .catch(error => console.log(error));
-
-    
-// const imagemin = require('imagemin');
-// const imageminMozjpeg = require('imagemin-mozjpeg');
-// (async () => {
-//     await imagemin(['assets/images/*.jpg'], 'build/images', {
-//         use: [
-//             imageminMozjpeg()
-//         ]
-//     });
-
-//     console.log('Images optimized');
-// })();
-
